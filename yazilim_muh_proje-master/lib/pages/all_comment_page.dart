@@ -24,7 +24,7 @@ class AllCommentPage extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        scrollDirection: Axis.vertical, // Explicitly set vertical scroll
+        scrollDirection: Axis.vertical,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(

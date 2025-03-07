@@ -218,17 +218,15 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   ),
 
                   SizedBox(
-                    height:
-                        140, // Yorumların ListView içinde düzgün görünmesini sağlar
+                    height: 140,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
-                      itemCount: //En fazla 5 yorum göster
+                      itemCount:
                           productComments.length >= 5
                               ? 5
                               : productComments.length,
                       shrinkWrap: true,
-                      physics:
-                          BouncingScrollPhysics(), // Daha yumuşak kaydırma efekti
+                      physics: BouncingScrollPhysics(),
                       itemBuilder: (context, i) {
                         return CommentBox(
                           text: productComments[i].text,
